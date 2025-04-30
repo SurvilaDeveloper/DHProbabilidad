@@ -1,9 +1,14 @@
+---
+---
 # Distribuciones de Probabilidad
 
 Una **distribución de probabilidades** describe cómo se distribuyen los posibles valores de una variable aleatoria, asignando una probabilidad a cada resultado. Existen dos tipos principales de distribuciones de probabilidad: **discretas** y **continuas**.
 
-## Distribuciones Discretas
+---
+---
 
+## Distribuciones Discretas
+---
 1. **Distribución Bernoulli**
    - Describe un experimento con dos posibles resultados: **éxito** (1) o **fracaso** (0).
    - La probabilidad de éxito es **p** y la de fracaso es **1-p**.
@@ -13,7 +18,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    $$
 
    **Ejemplo:** Lanzamiento de una moneda.
-
+---
 2. **Distribución Binomial**
    - Se utiliza cuando tenemos **n ensayos** independientes y la variable de interés tiene dos resultados posibles (éxito o fracaso).
    - La probabilidad de éxito en cada ensayo es **p**.
@@ -23,7 +28,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    $$
 
    **Ejemplo:** El número de caras al lanzar 5 veces una moneda.
-
+---
 3. **Distribución Geométrica**
    - Modela el número de ensayos necesarios hasta obtener el primer éxito en un proceso de Bernoulli.
    - La probabilidad de que el primer éxito ocurra en el **x**-ésimo ensayo es:
@@ -32,7 +37,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    $$
 
    **Ejemplo:** El número de lanzamientos de una moneda necesarios para obtener la primera cara.
-
+---
 4. **Distribución Hipergeométrica**
    - Describe la probabilidad de obtener **k** éxitos en **n** ensayos sin reemplazo, de una población que contiene **K** éxitos en total.
    - La fórmula es:
@@ -41,7 +46,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    $$
 
    **Ejemplo:** Extraer bolas de una urna sin reemplazo.
-
+---
 5. **Distribución Poisson**
    - Describe el número de eventos que ocurren en un intervalo de tiempo o espacio fijo, cuando los eventos ocurren de manera independiente y a una tasa promedio constante.
    - La fórmula de la función de probabilidad es:
@@ -50,7 +55,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    $$
 
    **Ejemplo:** El número de autos que pasan por un peaje en una hora.
-
+---
 6. **Distribución Binomial Negativa**
    - Modela el número de ensayos necesarios hasta obtener un número fijo de **x** éxitos en un proceso de Bernoulli.
    - La fórmula es:
@@ -59,7 +64,28 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    $$
 
    **Ejemplo:** El número de lanzamientos de una moneda necesarios para obtener 3 caras.
+---
+7. **Distribución Uniforme Discreta**
+   - Es aquella en la que **todos los valores enteros dentro de un rango específico tienen la misma probabilidad de ocurrir**.
 
+**Definición formal**
+
+Sea \( X \) una variable aleatoria discreta que toma valores enteros \( x_1, x_2, \ldots, x_n \). Se dice que \( X \) tiene una distribución uniforme discreta si:
+
+$$
+P(X = x_i) = \frac{1}{n}, \quad \text{para } i = 1, 2, \ldots, n
+$$
+
+   **Ejemplo** Si tirás un dado justo de 6 caras:
+
+- Los posibles valores son \( 1, 2, 3, 4, 5, 6 \)
+- Cada uno tiene la misma probabilidad: 
+
+$$
+P(X = k) = \frac{1}{6}, \quad \text{para } k = 1,2,\dots,6
+$$
+
+---
 ---
 
 ## Distribuciones Continuas
