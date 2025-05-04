@@ -1,3 +1,9 @@
+# matplotlib
+
+```python
+import matplotlib.pyplot as plt
+```
+
 # Tipos de Gráficos en Matplotlib
 
 A continuación se presenta una tabla con los tipos más comunes de gráficos que se pueden realizar con la librería `matplotlib` en Python, junto con una breve descripción:
