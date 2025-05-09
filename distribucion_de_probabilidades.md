@@ -13,6 +13,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    - Describe un experimento con dos posibles resultados: **éxito** (1) o **fracaso** (0).
    - La probabilidad de éxito es **p** y la de fracaso es **1-p**.
    - La probabilidad de que ocurra un éxito es:
+
    $$
    P(X = 1) = p, \quad P(X = 0) = 1 - p
    $$
@@ -23,6 +24,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
    - Se utiliza cuando tenemos **n ensayos** independientes y la variable de interés tiene dos resultados posibles (éxito o fracaso).
    - La probabilidad de éxito en cada ensayo es **p**.
    - La fórmula para la probabilidad de obtener exactamente **x** éxitos en **n** ensayos es:
+
    $$
    P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
    $$
@@ -32,6 +34,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
 3. ### Distribución Geométrica
    - Modela el número de ensayos necesarios hasta obtener el primer éxito en un proceso de Bernoulli.
    - La probabilidad de que el primer éxito ocurra en el **x**-ésimo ensayo es:
+
    $$
    P(X = x) = (1 - p)^{x-1} p
    $$
@@ -41,6 +44,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
 4. ### Distribución Hipergeométrica
    - Describe la probabilidad de obtener **k** éxitos en **n** ensayos sin reemplazo, de una población que contiene **K** éxitos en total.
    - La fórmula es:
+
    $$
    P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}
    $$
@@ -50,6 +54,7 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
 5. ### Distribución Poisson
    - Describe el número de eventos que ocurren en un intervalo de tiempo o espacio fijo, cuando los eventos ocurren de manera independiente y a una tasa promedio constante.
    - La fórmula de la función de probabilidad es:
+
    $$
    P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}
    $$
@@ -124,6 +129,7 @@ $$
 1. ### Distribución Uniforme
    - En la distribución uniforme continua, todos los valores dentro de un intervalo tienen la misma probabilidad de ocurrir.
    - La función de densidad es:
+
    $$
    f(x) = \frac{1}{b - a}, \quad a \leq x \leq b
    $$
@@ -133,6 +139,7 @@ $$
 2. ### Distribución Exponencial
    - Se utiliza para modelar el tiempo entre eventos en un proceso de Poisson, es decir, describe el tiempo que transcurre hasta que ocurre un evento.
    - La función de densidad de probabilidad es:
+
    $$
    f(x) = \lambda e^{-\lambda x}, \quad x \geq 0
    $$
@@ -143,6 +150,7 @@ $$
    - Es una de las distribuciones más conocidas y tiene una forma de campana simétrica.
    - Está completamente definida por la **media** ($\mu$) y la **desviación estándar** ($\sigma$).
    - La función de densidad de probabilidad es:
+
    $$
    f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp \left( - \frac{(x - \mu)^2}{2\sigma^2} \right)
    $$
@@ -152,6 +160,7 @@ $$
 4. ### Distribución Log-Normal
    - Si una variable aleatoria **X** tiene una distribución normal, entonces $e^X$ sigue una distribución log-normal.
    - La función de densidad de probabilidad es:
+
    $$
    f(x) = \frac{1}{x \sigma \sqrt{2\pi}} \exp \left( - \frac{(\ln(x) - \mu)^2}{2\sigma^2} \right)
    $$
@@ -161,6 +170,7 @@ $$
 5. ### Distribución Chi-cuadrada
    - Es una distribución especial de la familia de la distribución normal. La chi-cuadrada es la suma de los cuadrados de variables aleatorias independientes, cada una con distribución normal estándar.
    - La función de densidad es:
+
    $$
    f(x) = \frac{1}{2^{k/2} \Gamma(k/2)} x^{(k/2)-1} e^{-x/2}, \quad x \geq 0
    $$
@@ -170,6 +180,7 @@ $$
 6. ### Distribución de Weibull
    - Se utiliza en modelos de confiabilidad y tiempo de vida, describiendo el tiempo hasta que ocurre un evento (por ejemplo, fallo de un sistema).
    - La función de densidad es:
+
    $$
    f(x) = \lambda k x^{k-1} e^{-(x/\lambda)^k}, \quad x \geq 0
    $$
@@ -179,6 +190,7 @@ $$
 7. ### Distribución t de Student
    - Es útil para estimar la media de una población cuando el tamaño de la muestra es pequeño y la varianza es desconocida.
    - La función de densidad es:
+
    $$
    f(x) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu \pi} \Gamma\left(\frac{\nu}{2}\right)} \left( 1 + \frac{x^2}{\nu} \right)^{-(\nu + 1)/2}
    $$
@@ -188,6 +200,7 @@ $$
 8. ### Distribución Gamma
    - Generaliza tanto la distribución exponencial como la chi-cuadrada. Describe el tiempo hasta que ocurren **k** eventos.
    - La función de densidad es:
+
    $$
    f(x) = \frac{x^{k-1} e^{-x/\theta}}{\Gamma(k) \theta^k}, \quad x \geq 0
    $$
@@ -197,6 +210,7 @@ $$
 9. ### Distribución Beta
    - Modela distribuciones continuas de probabilidades en un intervalo $[0, 1]$, como proporciones o probabilidades.
    - La función de densidad es:
+   
    $$
    f(x) = \frac{x^{\alpha - 1} (1 - x)^{\beta - 1}}{B(\alpha, \beta)}, \quad 0 \leq x \leq 1
    $$
