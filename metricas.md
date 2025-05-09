@@ -32,8 +32,8 @@ Las **métricas de una distribución de probabilidad** son medidas que describen
 
 ## 5. **Coeficiente de Asimetría (Skewness)** — $ \gamma_1 $
 - Mide qué tan simétrica es una distribución.
-  - $ \gamma_1 > 0 $: Sesgo a la derecha (cola larga hacia la derecha).
-  - $ \gamma_1 < 0 $: Sesgo a la izquierda (cola larga hacia la izquierda).
+  - $\gamma_1 > 0$: Sesgo a la derecha (cola larga hacia la derecha).
+  - $\gamma_1 < 0$: Sesgo a la izquierda (cola larga hacia la izquierda).
 
 ---
 
