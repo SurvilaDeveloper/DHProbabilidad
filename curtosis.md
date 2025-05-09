@@ -44,7 +44,7 @@ A continuación se muestra un gráfico con los tres tipos de curtosis:
 
 ## 🧪 Fórmula general (curtosis poblacional)
 
-Para una variable aleatoria $ X $ con media $ \mu $ y desviación estándar $ \sigma $:
+Para una variable aleatoria $X$ con media $\mu$ y desviación estándar $\sigma$:
 
 $$
 \text{Curtosis} = \frac{\mathbb{E}[(X - \mu)^4]}{\sigma^4}

@@ -60,31 +60,31 @@ Una **distribución de probabilidades** describe cómo se distribuyen los posibl
 
 ---
 
-La **distribución binomial negativa** modela la cantidad de ensayos necesarios hasta obtener un número fijo de éxitos \( r \), en una secuencia de ensayos de Bernoulli independientes con probabilidad de éxito \( p \).
+La **distribución binomial negativa** modela la cantidad de ensayos necesarios hasta obtener un número fijo de éxitos $r$, en una secuencia de ensayos de Bernoulli independientes con probabilidad de éxito $p$.
 
 #### 🔹 Opción 1: Total de ensayos hasta el r-ésimo éxito
 
-Esta forma modela la **cantidad total de ensayos** necesarios para obtener exactamente \( r \) éxitos.
+Esta forma modela la **cantidad total de ensayos** necesarios para obtener exactamente $r$ éxitos.
 
 $$
 P(X = x) = \binom{x - 1}{r - 1} \cdot p^r \cdot (1 - p)^{x - r}
 $$
 
-- \( X \): número total de ensayos hasta obtener el \( r \)-ésimo éxito.
-- Soporte: \( x = r, r+1, r+2, \dots \)
+- $X$: número total de ensayos hasta obtener el $r$-ésimo éxito.
+- Soporte: $x = r, r+1, r+2, \dots$
 
 ---
 
 #### 🔹 Opción 2: Número de fracasos antes del r-ésimo éxito
 
-Esta formulación modela la **cantidad de fracasos** observados antes de obtener el \( r \)-ésimo éxito.
+Esta formulación modela la **cantidad de fracasos** observados antes de obtener el $r$-ésimo éxito.
 
 $$
 P(X = k) = \binom{k + r - 1}{r - 1} \cdot p^r \cdot (1 - p)^k
 $$
 
-- \( X \): número de fracasos antes de obtener el \( r \)-ésimo éxito.
-- Soporte: \( k = 0, 1, 2, \dots \)
+- $X$: número de fracasos antes de obtener el $r$-ésimo éxito.
+- Soporte: $k = 0, 1, 2, \dots$
 
 ---
 
@@ -101,7 +101,7 @@ $$
 
 **Definición formal**
 
-Sea \( X \) una variable aleatoria discreta que toma valores enteros \( x_1, x_2, \ldots, x_n \). Se dice que \( X \) tiene una distribución uniforme discreta si:
+Sea $X$ una variable aleatoria discreta que toma valores enteros $x_1, x_2, \ldots, x_n$. Se dice que $X$ tiene una distribución uniforme discreta si:
 
 $$
 P(X = x_i) = \frac{1}{n}, \quad \text{para } i = 1, 2, \ldots, n
@@ -109,7 +109,7 @@ $$
 
    **Ejemplo** Si tirás un dado justo de 6 caras:
 
-- Los posibles valores son \( 1, 2, 3, 4, 5, 6 \)
+- Los posibles valores son $1, 2, 3, 4, 5, 6$
 - Cada uno tiene la misma probabilidad: 
 
 $$
@@ -141,7 +141,7 @@ $$
 
 3. ### Distribución Normal (Gaussiana)
    - Es una de las distribuciones más conocidas y tiene una forma de campana simétrica.
-   - Está completamente definida por la **media** (\(\mu\)) y la **desviación estándar** (\(\sigma\)).
+   - Está completamente definida por la **media** ($\mu$) y la **desviación estándar** ($\sigma$).
    - La función de densidad de probabilidad es:
    $$
    f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp \left( - \frac{(x - \mu)^2}{2\sigma^2} \right)
@@ -150,7 +150,7 @@ $$
    **Ejemplo:** La altura de una población humana o el rendimiento de un examen estandarizado.
 
 4. ### Distribución Log-Normal
-   - Si una variable aleatoria **X** tiene una distribución normal, entonces \( e^X \) sigue una distribución log-normal.
+   - Si una variable aleatoria **X** tiene una distribución normal, entonces $e^X$ sigue una distribución log-normal.
    - La función de densidad de probabilidad es:
    $$
    f(x) = \frac{1}{x \sigma \sqrt{2\pi}} \exp \left( - \frac{(\ln(x) - \mu)^2}{2\sigma^2} \right)
@@ -195,7 +195,7 @@ $$
    **Ejemplo:** El tiempo hasta que ocurra un número fijo de eventos en un proceso de Poisson.
 
 9. ### Distribución Beta
-   - Modela distribuciones continuas de probabilidades en un intervalo \([0, 1]\), como proporciones o probabilidades.
+   - Modela distribuciones continuas de probabilidades en un intervalo $[0, 1]$, como proporciones o probabilidades.
    - La función de densidad es:
    $$
    f(x) = \frac{x^{\alpha - 1} (1 - x)^{\beta - 1}}{B(\alpha, \beta)}, \quad 0 \leq x \leq 1
