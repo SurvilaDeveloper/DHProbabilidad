@@ -31,3 +31,65 @@ A continuación se presenta una tabla con los tipos más comunes de gráficos qu
 
 > 💡 Muchos de estos gráficos pueden combinarse en una misma figura o subfiguras (`subplots`), lo que permite construir visualizaciones ricas y personalizadas.
 
+# Principales Objetos de Matplotlib
+
+Matplotlib está compuesto por múltiples clases y módulos. Aquí tienes los objetos más importantes:
+
+---
+
+## 🎨 Figura y Ejes
+
+| Objeto | Descripción |
+|--------|-------------|
+| `Figure` | Contenedor principal de toda la imagen o figura. Puede contener múltiples `Axes`. |
+| `Axes` | Área donde se dibujan los datos (subgráfico). Una figura puede tener varios `Axes`. |
+| `Axis` | Representa un eje individual dentro de un `Axes` (X o Y). |
+
+---
+
+## 📐 Elementos de dibujo
+
+| Objeto | Descripción |
+|--------|-------------|
+| `Line2D` | Representa una línea en el gráfico. |
+| `Patch` | Formas geométricas como rectángulos, círculos, polígonos (`Rectangle`, `Circle`, etc.). |
+| `Text` | Texto que se muestra en el gráfico (títulos, etiquetas, anotaciones). |
+| `Collection` | Conjunto de objetos como líneas o polígonos, útil para eficiencia. |
+
+---
+
+## 🖌️ Artistas
+
+| Objeto | Descripción |
+|--------|-------------|
+| `Artist` | Clase base de todos los objetos visibles. Todo en Matplotlib hereda de `Artist`. |
+| `Text`, `Line2D`, `Patch`, `Image` | Todos estos son artistas. Puedes agregarlos manualmente a `Axes` o `Figure`. |
+
+---
+
+## 🧰 Backends y Canvas
+
+| Objeto | Descripción |
+|--------|-------------|
+| `FigureCanvas` | Interfaz entre la figura y el backend de renderizado (por ejemplo, Agg, TkAgg, etc.). |
+| `Renderer` | Se encarga del renderizado final en píxeles o vectores. |
+
+---
+
+## 🧩 Otros módulos útiles
+
+| Módulo | Uso |
+|--------|-----|
+| `matplotlib.pyplot` | API de alto nivel basada en estado (como MATLAB). Muy usada en notebooks. |
+| `matplotlib.style` | Aplicar estilos visuales fácilmente (`style.use('ggplot')`). |
+| `matplotlib.ticker` | Control preciso del formato de los ticks. |
+| `matplotlib.dates` | Manejo de fechas y tiempos en ejes. |
+
+---
+
+## 🧠 Notas
+
+- `Axes` es el lugar donde sucede la magia: líneas, barras, imágenes, textos, etc.
+- La mayoría de gráficos complejos se logran manipulando objetos directamente (`Figure` → `Axes` → `Artist`).
+- Para aplicaciones avanzadas, se recomienda usar la API orientada a objetos en lugar de `pyplot`.
+
